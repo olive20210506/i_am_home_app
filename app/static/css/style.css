@@ -1,0 +1,40 @@
+/* 吹き出し本体 */
+.balloon{
+    position: relative;
+    padding: 20px;
+    background-color: #0c9ee2;
+    color: #ffffff;
+    border-radius: 50px;
+  }
+  /* 色付きの半円 */
+  .balloon::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transform: rotate(225deg);
+    right: 80px;
+    bottom: -20px;
+    border-left: 30px solid #0c9ee2;
+    border-top: 30px solid #0c9ee2;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+  }
+  /* 白い半円 */
+  .balloon::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transform: rotate(225deg);
+    right: 60px;
+    bottom: -30px;
+    border-left: 30px solid #ffffff;
+    border-top: 30px solid #ffffff;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+  }

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}おかえりなさい{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="mx-auto mt-5 p-3">
+        <h1 class="text-center mb-5">おかえり！！</h1>
+        <p class="text-center"></p>
+        <div>
+            <div class="d-flex justify-content-center flex-row">
+                <div class="balloon">
+                    <h3 class="text-center">おやくそく</h3>
+                    <ul class="my-4">
+                        <li class="mb-2">おとうさんか、おかあさんが かえってくるまで いえにいてね。</li>
+                        <li class="mb-2">げんかんのカギを しめてね。チャイムが なっても でないよ。</li>
+                        <li class="mb-2">ベランダには でないよ。でまどにも のぼらないでね。</li>
+                        <li class="mb-2">しゅくだいが あったら、さきに やろうね。</li>
+                    </ul>
+                    <p class="text-center">
+                        やくそくをまもって、たのしい おるすばんライフを！<br>
+                        おやつは、キッチンのつくえの うえに あるから たべてね。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 d-flex justify-content-end">
+            <img src="./static/img/img02.png"  alt="" class=" align-self-end" height=150>
+            <img src="./static/img/img01.png" alt="" height=250>
+        </div>
+    </div>
+</div>
+{% endblock %}
