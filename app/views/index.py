@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, current_app
+from flask import Blueprint, render_template, request
 from flask_httpauth import HTTPBasicAuth
 
 import base64
@@ -21,6 +21,7 @@ def show_index():
     return render_template("index.html")
     
 @index.route("/send_message", methods=["GET", "POST"])
+@auth.login_required
 def send_message():
     if request.method == "GET":
         return render_template("index.html")
